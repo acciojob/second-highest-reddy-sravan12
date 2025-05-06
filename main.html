@@ -9,9 +9,21 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
-		}
+    let highest=-Infinity ,second=-Infinity
+    if(arr.length<2){
+        return second
+    }
+
+for(let char of arr){
+    if(char>=highest){
+        if(char !==highest){
+            second=highest
+        }
+        highest=char
+    }
+}
+return second
+}
 
 		function Main() {
 			var n = prompt("Enter the number of elements");
