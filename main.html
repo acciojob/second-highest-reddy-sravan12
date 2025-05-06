@@ -8,7 +8,7 @@
 
 <body>	
 	<script>
-		function secondHighest(arr) {
+function secondHighest(arr) {
     let highest=-Infinity ,second=-Infinity
     if(arr.length<2){
         return second
@@ -20,6 +20,8 @@ for(let char of arr){
             second=highest
         }
         highest=char
+    }else if(char>=second){
+                    second=char
     }
 }
 return second
